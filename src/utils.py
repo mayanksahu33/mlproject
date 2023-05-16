@@ -45,7 +45,7 @@ def evaluate_models(X_train,y_train,X_test,y_test,models,params):
         return report
     
     except Exception as e:
-        CustomException(e,sys)
+        raise CustomException(e,sys)
 
 
 def load_object(file_path):
